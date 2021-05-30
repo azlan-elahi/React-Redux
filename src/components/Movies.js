@@ -12,8 +12,8 @@ class Movies extends React.Component {
 
         return (
             <div>
-                {data.map(movie => (
-                    < Moviecard movie={movie} />
+                {data.map((movie, index) => (
+                    < Moviecard movie={movie} key={`movies-${index}`} />
                 ))}
             </div>
         );
